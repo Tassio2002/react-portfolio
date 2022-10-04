@@ -82,7 +82,7 @@
 
 .logo-container {
   z-index: 0;
-  width: 400px;
+  width: 500px;
   height: 609px;
   position: absolute;
   top: 0;
@@ -90,6 +90,9 @@
   bottom: 0;
   left: auto;
   margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 @media screen and (max-width: 1200px) {

@@ -1,14 +1,50 @@
 
 .repositories {
-  max-width: 200px;
+  max-width: 500px;
   padding: 1em 2em;
-  border: 1px white solid;
+  border: 1px #fff solid;
   border-radius: 1em;
+  margin: 1em 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.repositories:hover {
+  background-color: #010c1341;
+  cursor: pointer;
 }
 
 .repositories .repo-link {
   font-family: 'Coolvetica';
   text-decoration: none;
-  color: white;
+  color: #fff;
   font-size: 20px;
+}
+
+.repo-title {
+  width: 100%;
+  display: flex;
+  align-content: baseline;
+  justify-content: space-between;
+}
+
+.repo-title .language-tag {
+  padding: 0.2em 0.7em;
+  border-radius: 2em;
+  margin: 0;
+  font-family: Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 15px;
+  font-weight: 100;
+  background-color: #0a5596;
+  color: #fff;
+}
+
+.repo-desc {
+  width: 100%;
+}
+
+.repo-desc .description {
+  color: #a3a3a3;
+  font-family: Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 14px;
 }

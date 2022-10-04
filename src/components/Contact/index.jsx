@@ -13,7 +13,7 @@ const Contact = () => {
     setTimeout(() => {
       return setLetterClass('text-animate-hover')
     }, 3000)
-  }, [])
+  }, [letterClass])
 
   const sendEmail = (e) => {
     e.preventDefault()

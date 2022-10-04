@@ -33,8 +33,8 @@ const Home = () => {
   useEffect(() => {
     setTimeout(() => {
       return setLetterClass('text-animate-hover')
-    }, 5000)
-  }, [setLetterClass])
+    }, 3000)
+  }, [letterClass])
 
   return (
     <>
@@ -66,8 +66,11 @@ const Home = () => {
           </Link>
         </div>
         <div className='logo-container'>
-          <Logo idx='15'/>
+          <Logo idx='12'/>
           <Logo idx='2'/>
+          <Logo idx='5'/>
+          <Logo idx='24'/>
+          <Logo idx='27'/>
         </div>
 
       </div>

@@ -19,7 +19,7 @@ const About = () => {
     setTimeout(() => {
       return setLetterClass('text-animate-hover')
     }, 3000)
-  }, [])
+  }, [letterClass])
   return (
     <>
       <div className="container about-page">
