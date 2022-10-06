@@ -32,19 +32,13 @@ const About = () => {
             />
           </h1>
           <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti
-            delectus illo illum quae consequatur. Harum ex vel modi quis nihil
-            earum unde debitis rerum ad incidunt, sint impedit provident sequi.
+            Desde criança sempre fui atraido a tecnologia, lembro de tentar aprender tudo o que podia sobre hardware de computadores, celulares e consoles. Não demorou muito para que eu começasse a me interessar por software também. No ensino médio entrei numa escola técnica em T.I, onde conheci mais sobre todo o ciclo de desenvolvimento e decidi que era isso que eu queria para a minha vida profissional.
           </p>
           <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti
-            delectus illo illum quae consequatur. Harum ex vel modi quis nihil
-            earum unde debitis rerum ad incidunt, sint impedit provident sequi.
+            Logo após a escola passei por um processo seletivo concorrido onde só haviam 20 vagas para o meu estado (Bahia) consegui ser um dos selecionados para fazer um bootcamp intensivo em desenvolvimento full-stack, aprendi muito nesse periodo, estudava entre 6 e 8 horas por dia e com certeza o esforço valeu a pena.
           </p>
           <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti
-            delectus illo illum quae consequatur. Harum ex vel modi quis nihil
-            earum unde debitis rerum ad incidunt, sint impedit provident sequi.
+            Após finalizar o curso entrei no mercado de trabalho onde venho atuando como desenvolvedor full-stack junior e aprendendo mais a cada dia. Continuo estudando bastante pra mim é quase como se fosse um hobbie, eu realmente sinto que me encontrei nessa área.
           </p>
         </div>
 

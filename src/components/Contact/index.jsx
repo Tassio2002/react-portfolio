@@ -3,12 +3,15 @@ import Loader from 'react-loaders'
 import { useRef } from 'react'
 import emailjs from '@emailjs/browser'
 import AnimatedLetters from '../AnimatedLetters'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faFilePdf } from '@fortawesome/free-solid-svg-icons'
 import './index.scss'
 
 const Contact = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
   const form = useRef()
-
+  const curriculumLink =
+    'https://drive.google.com/file/d/1yrPPMUXyhimBi6RwCjJ7FFic_5zIl2-V/view?usp=sharing'
   useEffect(() => {
     setTimeout(() => {
       return setLetterClass('text-animate-hover')
@@ -19,7 +22,12 @@ const Contact = () => {
     e.preventDefault()
 
     emailjs
-      .sendForm('service_e4m6w7k', 'template_k89p785', form.current, '0yT6TzD1-3wLOZraL')
+      .sendForm(
+        'service_e4m6w7k',
+        'template_k89p785',
+        form.current,
+        '0yT6TzD1-3wLOZraL'
+      )
       .then(
         () => {
           alert('Message successfully sent!')
@@ -43,18 +51,14 @@ const Contact = () => {
             />
           </h1>
           <p>
-            Entre em contato comigo diretamente por email, ou então pelo whatapp ou linkedin.
+            Entre em contato comigo diretamente por email, ou então pelo whatapp
+            ou linkedin.
           </p>
           <div className="contact-form">
             <form ref={form} onSubmit={sendEmail}>
               <ul>
                 <li className="half">
-                  <input
-                    placeholder="Nome"
-                    type="text"
-                    name="name"
-                    required
-                  />
+                  <input placeholder="Nome" type="text" name="name" required />
                 </li>
                 <li className="half">
                   <input
@@ -84,6 +88,26 @@ const Contact = () => {
                 </li>
               </ul>
             </form>
+          </div>
+        </div>
+        <div className="curriculum">
+          <h2>Quer saber mais sobre mim?</h2>
+          <p>Clique no botão abaixo para ver o meu curriculo completo</p>
+          <div className="curriculum-btn">
+            <a
+              className="curriculum-link"
+              href={curriculumLink}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Curriculo
+
+            </a>
+            <FontAwesomeIcon
+                className="curriculum-icon"
+                icon={faFilePdf}
+                color="#4d4d4e"
+              />
           </div>
         </div>
       </div>

@@ -73,46 +73,54 @@
   }
 }
 
-.map-wrap {
-  background: rgba(8, 253, 216, 0.1);
-  float: right;
-  width: 53%;
-  height: 115%;
-  margin-top: -3%;
-}
-
-.leaflet-container {
-  position: relative;
-  width: 100%;
+.curriculum {
+  width: 45%;
   height: 100%;
-  opacity: 0;
-  animation: backInRight 1s 1.2s;
-  animation-fill-mode: forwards;
+  top: 0;
+  padding-top: 21%;
+  position: absolute;
+  right: 0;
 }
 
-.info-map {
-  position: absolute;
-  background: #000;
-  top: 50px;
-  right: 30%;
-  z-index: 999999;
-  width: 267px;
-  padding: 20px;
-  color: #fff;
-  font-family: 'Helvetica';
-  font-size: 17px;
-  font-weight: 300;
-  opacity: 0;
-  animation: fadeIn 1s 1.5s;
-  animation-fill-mode: forwards;
+.curriculum h2 {
+  font-size: 22px;
+  font-family: 'Coolvetica';
+  color: #ffd700;
+  font-weight: 400;
+}
+.curriculum .curriculum-btn {
+  max-width: 100px;
+  padding: 1em 2em;
+  border: 1px solid #ffd700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-  span {
-    font-size: 16px;
+.curriculum-btn:hover {
+  background: #ffd700;
+  cursor: pointer;
 
-    span {
-      color: #ffd700;
-    }
+  .curriculum-link {
+    color: #333;
   }
+
+  .curriculum-icon {
+    color: #333;
+  }
+}
+
+.curriculum-btn .curriculum-link {
+  padding-right: 0.5em;
+  font-family: sans-serif;
+  font-size: 16px;
+  text-decoration: none;
+  color: #ffd700;
+}
+
+.curriculum-btn .curriculum-icon {
+  font-size: 20px;
+  color: #ffd700;
 }
 
 @media screen and (max-width: 1200px) {
